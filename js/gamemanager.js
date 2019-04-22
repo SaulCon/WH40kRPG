@@ -22,7 +22,7 @@ let GameManager = {
                 break;
         }
         let getInterface = document.querySelector(".interface");
-        getInterface.innerHTML = '<img src="img/spacemarines/' + classType.toLowerCase() + '.jpg" class="img-spacemarine"><div><h3>' + classType + '</h3><p class= "health-player">Health: ' + player.health + '</p></h3><p>Psychic: ' + player.psychic + '</p></h3><p>Strength: ' + player.strength + '</p></h3><p>Agility: ' + player.agility + '</p></h3><p>Speed: ' + player.speed + '</p></h3><p>Chapter: ' + player.chapter + '</p></div>';
+        getInterface.innerHTML = '<img src="assets/img/spacemarines/' + classType.toLowerCase() + '.jpg" class="img-spacemarine"><div><h3>' + classType + '</h3><p class= "health-player">Health: ' + player.health + '</p></h3><p>Psychic: ' + player.psychic + '</p></h3><p>Strength: ' + player.strength + '</p></h3><p>Agility: ' + player.agility + '</p></h3><p>Speed: ' + player.speed + '</p></h3><p>Chapter: ' + player.chapter + '</p></div>';
 
     },
     setPreFight: function(){
@@ -66,6 +66,6 @@ let GameManager = {
         getHeader.innerHTML = '<p>Stand and Fight! For the Emperor!'
         
         getActions.innerHTML = '<a href="#" class="btn-prefight" onclick="PlayerMoves.calcAttack()">Attack!</a>';
-        getTyranids.innerHTML = '<img src="img/tyranids/' + enemy.tyranids.toLowerCase() + '.jpg" alt="' + enemy.tyranids + '"class=img-tyranids"><div><h3>' + enemy.tyranids + '</h3><p class="health-enemy">Health: ' + enemy.health + '</p><p>Psychic: ' + enemy.psychic + '</p><p>Strength: ' + enemy.strength + '</p><p>Agility: ' + enemy.agility + '</p><p>Speed: ' + enemy.speed + '</p></div>'; 
+        getTyranids.innerHTML = '<img src="assets/img/tyranids/' + enemy.tyranids.toLowerCase() + '.jpg" alt="' + enemy.tyranids + '"class=img-tyranids"><div><h3>' + enemy.tyranids + '</h3><p class="health-enemy">Health: ' + enemy.health + '</p><p>Psychic: ' + enemy.psychic + '</p><p>Strength: ' + enemy.strength + '</p><p>Agility: ' + enemy.agility + '</p><p>Speed: ' + enemy.speed + '</p></div>'; 
     }
 }

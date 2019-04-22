@@ -3,7 +3,7 @@
   color: magenta;
   text-align: center;
   font-size: 48px;
-  background-image:url("img/battlefield/40ktitle.jpg");
+  background-image:url("assets/img/battlefield/40ktitle.jpg");
   background-repeat:no-repeat;
   background-position: center;
   background-size: 1000px 900px;
@@ -18,7 +18,7 @@ img {
   }
   
   body {
-    background-image:url("img/battlefield/battlefield.jpg");
+    background-image:url("assets/img/battlefield/battlefield.jpg");
     background-size: 100%;
     background-color: #1b1b1b;
   }
@@ -133,7 +133,7 @@ img {
     width: 100%;
     height: 180px;
     background-color: #1d373d;
-    background-image: url("img/battlefield/battlefield.jpg");
+    background-image: url("assets/img/battlefield/battlefield.jpg");
     background-position: center;
     background-repeat:repeat;
     background-size: 100vh;

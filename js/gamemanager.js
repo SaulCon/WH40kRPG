@@ -6,19 +6,19 @@ let GameManager = {
     resetPlayer: function(classType) {
         switch (classType) {
             case "Karlaen":
-                player = new Player (classType,"BloodAngels",100,200,100,100,100,)
+                player = new Player (classType,"BloodAngels",100,250,100,100,100,)
                 break;
                 case "Captain Astoric":
-                player = new Player (classType,"DarkAngels",150,0,150,150,100,)
+                player = new Player (classType,"DarkAngels",150,0,150,200,100,)
                 break;
                 case "Kraton":
-                player = new Player (classType,"ImperialFists",200,0,200,50,50,)
+                player = new Player (classType,"ImperialFists",200,0,250,100,50,)
                 break;
                 case "Saul Invictus":
-                player = new Player (classType,"Ultramarines",150,0,150,100,50,)
+                player = new Player (classType,"Ultramarines",150,0,200,100,50,)
                 break;
                 case "Arturus":
-                player = new Player (classType,"GreyKnights",150,150,100,100,100,)
+                player = new Player (classType,"GreyKnights",150,200,100,100,100,)
                 break;
         }
         let getInterface = document.querySelector(".interface");
@@ -38,11 +38,11 @@ let GameManager = {
         let getActions = document.querySelector(".actions");
         let getTyranids = document.querySelector(".tyranids");
         // Hive Fleet Behemoth!
-        let tyranid00 = new Enemy("Genestealers",100,0,100,200,200);
+        let tyranid00 = new Enemy("Genestealers",100,0,100,150,200);
         let tyranid01 = new Enemy("Trygon",300,0,300,50,50);
         let tyranid02 = new Enemy("Hormagaunts",50,0,50,100,150);
-        let tyranid03 = new Enemy("Carnifex",200,0,250,50,50);
-        let tyranid04 = new Enemy("Swarmlord",200,100,150,100,150);
+        let tyranid03 = new Enemy("Carnifex",250,0,300,50,50);
+        let tyranid04 = new Enemy("Swarmlord",200,150,150,100,150);
         let chooseRandomEnemy = Math.floor(Math.random() * Math.floor(5));
         //console.log(chooseRandomEnemy);
         switch (chooseRandomEnemy) {

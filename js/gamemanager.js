@@ -22,7 +22,7 @@ let GameManager = {
                 break;
         }
         let getInterface = document.querySelector(".interface");
-        getInterface.innerHTML = '<img src="img/spacemarines/' + classType.toUpperCase() + '.jpg" class="img-spacemarine"><div><h3>' + classType + '</h3><p class= "health-player">Health: ' + player.health + '</p></h3><p>Psychic: ' + player.psychic + '</p></h3><p>Strength: ' + player.strength + '</p></h3><p>Agility: ' + player.agility + '</p></h3><p>Speed: ' + player.speed + '</p></h3><p>Chapter: ' + player.chapter + '</p></div>';
+        getInterface.innerHTML = '<img src="img/spacemarines/' + classType.toLowerCase() + '.jpg" class="img-spacemarine"><div><h3>' + classType + '</h3><p class= "health-player">Health: ' + player.health + '</p></h3><p>Psychic: ' + player.psychic + '</p></h3><p>Strength: ' + player.strength + '</p></h3><p>Agility: ' + player.agility + '</p></h3><p>Speed: ' + player.speed + '</p></h3><p>Chapter: ' + player.chapter + '</p></div>';
 
     },
     setPreFight: function(){

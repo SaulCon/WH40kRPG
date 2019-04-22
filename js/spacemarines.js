@@ -79,9 +79,7 @@ let PlayerMoves = {
         else
         {
             getEnemyHealth.innerHTML= 'Health: ' + enemy.health;
-            
-            //Enemy Attacks
-
+              //Enemy Attacks
             let enemyAttackValues = enemyAttack();
             let totalDamage = enemyAttackValues[0] * enemyAttackValues [1];
             player.health = player.health - totalDamage;
@@ -120,8 +118,8 @@ let PlayerMoves = {
             //Victory Coniditons and Health
             if (enemy.health <= 0) {
                 alert("You have vanquished the Xenos threat! Ad Victorium Brother!");
-                getEnemyHealth.innerHTML= 'Health: 0';
                 getPlayerHealth.innerHTML= 'Health: ' + player.health;
+                getEnemyHealth.innerHTML= 'Health: 0'
             } 
             else
             {

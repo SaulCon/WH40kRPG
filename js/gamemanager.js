@@ -22,7 +22,7 @@ let GameManager = {
                 break;
         }
         let getInterface = document.querySelector(".interface");
-        getInterface.innerHTML = '<img src="assets/img/spacemarines/' + classType.toLowerCase() + '.jpg" class="img-spacemarine"><div><h3>' + classType + '</h3><p class= "health-player">Health: ' + player.health + '</p></h3><p>Psychic: ' + player.psychic + '</p></h3><p>Strength: ' + player.strength + '</p></h3><p>Agility: ' + player.agility + '</p></h3><p>Speed: ' + player.speed + '</p></h3><p>Chapter: ' + player.chapter + '</p></div>';
+        getInterface.innerHTML = '<img src="assets/img/spacemarines/git ad' + classType.toLowerCase() + '.jpg" class="img-spacemarine"><div><h3>' + classType + '</h3><p class= "health-player">Health: ' + player.health + '</p></h3><p>Psychic: ' + player.psychic + '</p></h3><p>Strength: ' + player.strength + '</p></h3><p>Agility: ' + player.agility + '</p></h3><p>Speed: ' + player.speed + '</p></h3><p>Chapter: ' + player.chapter + '</p></div>';
 
     },
     setPreFight: function(){
@@ -40,7 +40,7 @@ let GameManager = {
         // Hive Fleet Behemoth!
         let tyranid00 = new Enemy("Genestealers",100,0,100,200,200);
         let tyranid01 = new Enemy("Trygon",300,0,300,50,50);
-        let tyranid02 = new Enemy("Hormaguants",50,0,50,100,150);
+        let tyranid02 = new Enemy("Hormagaunts",50,0,50,100,150);
         let tyranid03 = new Enemy("Carnifex",200,0,250,50,50);
         let tyranid04 = new Enemy("Swarmlord",200,100,150,100,150);
         let chooseRandomEnemy = Math.floor(Math.random() * Math.floor(5));
